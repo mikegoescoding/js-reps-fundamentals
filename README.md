@@ -2,7 +2,7 @@
 
 JavaScript fundamentals practice — exercises covering core concepts needed for full stack development.
 
-## What I practiced
+## Re-running all the hits for good measure
 
 - **Lesson 1** — Variables & types: let, const, var, typeof, primitive data types
 - **Lesson 2** — Functions: declarations, expressions, arrow functions, default parameters
