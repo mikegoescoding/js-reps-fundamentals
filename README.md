@@ -2,7 +2,15 @@
 
 JavaScript fundamentals practice — exercises covering core concepts needed for full stack development.
 
-## Re-running all the hits for good measure
+## Lessons
+
+### Lessons 1–8 — run with Node.js
+
+```bash
+node lesson1.js
+node lesson2.js
+# etc.
+```
 
 - **Lesson 1** — Variables & types: let, const, var, typeof, primitive data types
 - **Lesson 2** — Functions: declarations, expressions, arrow functions, default parameters
@@ -11,27 +19,12 @@ JavaScript fundamentals practice — exercises covering core concepts needed for
 - **Lesson 5** — Loops: for, while, forEach, backwards loops, loop control
 - **Lesson 6** — Objects: key/value pairs, dot vs bracket notation, Object.keys, Object.values
 - **Lesson 7** — Array methods: map, filter, reduce, method chaining
-- **Lesson 8** — Scope, Closure
+- **Lesson 8** — Scope & closures: lexical scope, closure pattern, factory functions, private state
 
-## How to run it
-
-```bash
-node lesson1.js
-node lesson2.js
-# etc.
-```
-
-Requires Node.js installed locally.
-
-## Tech stack
-
-JavaScript (ES6+), Node.js
-
-## Lesson 9 — The DOM
+### Lesson 9 — The DOM
 
 **Files:** `lesson9.html`, `lesson9.css`, `lesson9.js`
-
-### What I practiced
+Open `lesson9.html` with Live Server in VS Code — no Node required.
 
 - Selecting elements with `querySelector`
 - Reading and updating content with `textContent`
@@ -42,6 +35,6 @@ JavaScript (ES6+), Node.js
 - Building a dynamic list with an incrementing counter
 - Building an input-driven list (todo app pattern) with empty input guard using `trim()`
 
-### How to run it
+## Tech stack
 
-Open `lesson9.html` with Live Server in VS Code — no Node required.
+JavaScript (ES6+), Node.js, Browser APIs
