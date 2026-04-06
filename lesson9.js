@@ -1,47 +1,46 @@
-// select elements
+// Lesson 9: The DOM
+
+// --- Element selection ---
 const title = document.querySelector("#title");
 const description = document.querySelector("#description");
 const btn = document.querySelector("#btn");
 const colorBtn = document.querySelector("#colorBtn");
 const toggleBtn = document.querySelector("#toggleBtn");
+const addBtn = document.querySelector("#addBtn");
+const list = document.querySelector("#list");
+const textInput = document.querySelector("#addTextInput");
+const inputBtn = document.querySelector("#addTextBtn");
+const dynamicList = document.querySelector("#dynamicList");
 
-// read and change content
+// --- Content ---
 title.textContent = "New title";
 description.textContent = "New text content.";
 
-// change styles
+// --- Styles ---
 title.style.color = "red";
 
-// add/remove classes
-title.classList.add("active");
-title.classList.remove("active");
-
-// listen for events
+// --- Exercise 1: basic click event ---
 btn.addEventListener("click", function () {
   console.log("clicked");
 });
+
+// --- Exercise 2: random color on click ---
 colorBtn.addEventListener("click", function () {
   const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
   title.style.color = randomColor;
 });
+
+// --- Exercise 3: toggle highlight class ---
 toggleBtn.addEventListener("click", function () {
   title.classList.toggle("highlight");
 });
 
-// creating and appending elms
+// --- Exercise 4: create and append a paragraph ---
 const newElement = document.createElement("p");
 newElement.textContent = "I was created by JavaScript";
 document.body.appendChild(newElement);
 
-// const newBtn = document.createElement("button");
-// const newList = document.createElement("ul");
-// newBtn.textContent = "Look at me, I'm a new button with way too much text";
-// newList.id = "list";
-// // document.body.appendChild(newBtn);
-// // document.body.appendChild(newList);
-// document.body.append(newBtn, newList);
-const addBtn = document.querySelector("#addBtn");
-const list = document.querySelector("#list");
+// --- Exercise 4: incrementing list ---
 let count = 0;
 addBtn.addEventListener("click", function () {
   count++;
@@ -50,16 +49,11 @@ addBtn.addEventListener("click", function () {
   list.append(newItem);
 });
 
-const textContent = document.querySelector("#addTextInput");
-const inputBtn = document.querySelector("#addTextBtn");
-const newList = document.querySelector("#dynamicList");
-
+// --- Exercise 5: input-driven list (todo pattern) ---
 inputBtn.addEventListener("click", function () {
-  if (textContent.value.trim() === "") return;
-
-  const newText = textContent.value;
+  if (textInput.value.trim() === "") return;
   const newListItem = document.createElement("li");
-  newListItem.textContent = newText;
-  newList.append(newListItem);
-  textContent.value = "";
+  newListItem.textContent = textInput.value;
+  dynamicList.append(newListItem);
+  textInput.value = "";
 });

@@ -2,25 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Lesson 9</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 9 — The DOM</title>
     <link rel="stylesheet" href="lesson9.css" />
   </head>
   <body>
+    <!-- Exercise 1-3: content, styles, events -->
     <h1 id="title">Hello</h1>
     <p id="description">This is a paragraph.</p>
     <button id="btn">Click me</button>
     <button id="colorBtn">Change color</button>
     <button id="toggleBtn">Toggle highlight</button>
 
+    <!-- Exercise 4: incrementing list -->
     <h2>List of items</h2>
     <button id="addBtn">Add item</button>
     <ul id="list"></ul>
-    <br />
-    <hr />
-    <br />
-    <input id="addTextInput" type="text" value="" />
+
+    <!-- Exercise 5: input-driven list -->
+    <h2>Dynamic list</h2>
+    <input id="addTextInput" type="text" placeholder="Type something..." />
     <button id="addTextBtn">Add</button>
     <ul id="dynamicList"></ul>
+
     <script src="lesson9.js"></script>
   </body>
 </html>
