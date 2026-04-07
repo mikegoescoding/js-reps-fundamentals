@@ -47,6 +47,18 @@ Open `lesson10.html` with Live Server in VS Code — no Node required.
 - `element.remove()` — deleting elements from the DOM
 - Silent failure — referencing a method vs calling it (missing parentheses)
 
+### Lesson 11 — Destructuring & Spread
+
+**Files:** `lesson11.js`
+Run with `node lesson11.js`
+
+- Object destructuring — pulling properties into standalone variables
+- Array destructuring — including skipping indexes with empty commas
+- Destructuring in function parameters — only pulling what the function needs
+- Spread with arrays — merging and combining
+- Spread with objects — merging and overriding, last spread wins on conflicts
+- Edge case: spreading an object into an array
+
 ## Tech stack
 
 JavaScript (ES6+), Node.js, Browser APIs
