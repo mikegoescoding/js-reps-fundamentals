@@ -35,6 +35,18 @@ Open `lesson9.html` with Live Server in VS Code — no Node required.
 - Building a dynamic list with an incrementing counter
 - Building an input-driven list (todo app pattern) with empty input guard using `trim()`
 
+### Lesson 10 — Events
+
+**Files:** `lesson10.html`, `lesson10.js`
+Open `lesson10.html` with Live Server in VS Code — no Node required.
+
+- The event object — `event.target`, `event.type`, `event.preventDefault()`
+- `"input"` event for real-time text mirroring as you type
+- `"click"` event with empty input guard, DOM manipulation, and input clearing
+- Event delegation — one listener on a parent `ul` handling all child `li` clicks
+- `element.remove()` — deleting elements from the DOM
+- Silent failure — referencing a method vs calling it (missing parentheses)
+
 ## Tech stack
 
 JavaScript (ES6+), Node.js, Browser APIs
