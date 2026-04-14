@@ -59,6 +59,17 @@ Run with `node lesson11.js`
 - Spread with objects — merging and overriding, last spread wins on conflicts
 - Edge case: spreading an object into an array
 
+### Lesson 12 — Callbacks & the Event Loop
+
+**Files:** `lesson12.js`
+Run with `node lesson12.js`
+
+- How JavaScript executes code one thing at a time (single threaded)
+- The call stack, Web APIs, and callback queue
+- Why async callbacks always run after synchronous code — even at 0ms
+- Nested callbacks and why they become "callback hell"
+- Passing function references vs calling functions immediately
+
 ## Tech stack
 
 JavaScript (ES6+), Node.js, Browser APIs
